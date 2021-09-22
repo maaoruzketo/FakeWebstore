@@ -1,0 +1,19 @@
+<div *ngIf="condition">
+    <h2></h2>
+</div>
+<div class="card-deck">    
+    <div class="row">
+        <div *ngFor = "let product of genetics" class="col">
+            <div class="card" style="width: 18rem;">
+                <img [src]="product.image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.Name}}</h5>
+                    <p class="card-text">{{product.pDesc}}</p>
+                    <p class="card-text">{{product.additionalInfo}}</p>
+                    <h6 class="card-text">${{product.price}}</h6>
+                    <button class="btn btn-primary" (click)="addToCart(product)">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

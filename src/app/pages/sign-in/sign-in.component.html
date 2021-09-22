@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row"><br></div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <input #un type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1">
+            <input #fn type="text" class="form-control" placeholder="First Name" aria-label="First Name"
+                aria-describedby="basic-addon1">
+            <input #ln type="text" class="form-control" placeholder="Last Name" aria-label="Last Name"
+                aria-describedby="basic-addon1">
+            <input #ea type="text" class="form-control" placeholder="Email Address" aria-label="Email Address"
+                aria-describedby="basic-addon1">
+            <input #ce type="text" class="form-control" placeholder="Confirm Email Address"
+                aria-label="Confirm Email Address" aria-describedby="basic-addon1">
+            <input #pw type="passWord" class="form-control" placeholder="Password" aria-label="passWord"
+                aria-describedby="basic-addon1">
+            <input #cpw type="passWord" class="form-control" placeholder="Confirm Password"
+                aria-label="Confirm passWord" aria-describedby="basic-addon1">
+            <button type="button" (click)='signUp(un.value,fn.value,ln.value,ea.value,ce.value,pw.value,cpw.value)' class="btn btn-dark">Sign Up</button>
+        </div>
+        <div class="col-3">
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <!-- <app-login></app-login> -->
+</div>
